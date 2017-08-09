@@ -16,6 +16,7 @@ import { AdminProfileComponent } from './admin-profile/admin-profile.component';
 import { ConcertFormComponent } from './concert-form/concert-form.component';
 import { ConcertsComponent } from './concerts/concerts.component';
 import { ConcertPageComponent } from './concert-page/concert-page.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ConcertPageComponent } from './concert-page/concert-page.component';
     AdminProfileComponent,
     ConcertFormComponent,
     ConcertsComponent,
-    ConcertPageComponent
+    ConcertPageComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

@@ -9,6 +9,7 @@ import { AdminProfileComponent } from './admin-profile/admin-profile.component';
 import { ConcertFormComponent } from './concert-form/concert-form.component';
 import { ConcertsComponent } from './concerts/concerts.component';
 import { ConcertPageComponent } from './concert-page/concert-page.component';
+import { HomeComponent } from './home/home.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -21,4 +22,5 @@ export const routes: Routes = [
   { path: 'concert-form', component: ConcertFormComponent },
   { path: 'concerts', component: ConcertsComponent },
   { path: 'concerts/:id', component: ConcertPageComponent },
+  { path: '', component: HomeComponent },
 ]

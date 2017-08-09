@@ -10,6 +10,7 @@ import { ConcertService } from '../services/concert.service';
   providers: [ConcertService]
 })
 export class ConcertsComponent implements OnInit {
+$:any;
 error:string;
 concerts:any;
   constructor(private concert: ConcertService,
@@ -21,4 +22,13 @@ concerts:any;
     .subscribe(result =>this.concerts=result);
   }
 
+ event() {
+            var sideslider = this.$('[data-toggle=collapse-side]');
+            var sel = sideslider.attr('data-target');
+            var sel2 = sideslider.attr('data-target-2');
+            sideslider.click(function(event){
+                this.$(sel).toggleClass('in');
+                this.$(sel2).toggleClass('out');
+            });
+}
 }
