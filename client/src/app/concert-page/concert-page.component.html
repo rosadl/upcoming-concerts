@@ -27,6 +27,6 @@
 <div *ngFor= "let recommendation of recommendations">
 {{recommendation[0].artist}}
 
-<button [routerLink]="['/concerts',recommendation[0]._id]">Ir al concierto</button>
+<button (click)="reset()" [routerLink]="['/concerts',recommendation[0]._id]">Ir al concierto</button>
 </div>
 </div>
