@@ -1,0 +1,12 @@
+ <div *ngFor="let concert of concerts">
+
+<p>Artist: {{concert.artist}}
+  <br>
+  <img src="{{concert.imgUrl[0]}}" alt="loading">
+    <br>
+Date: {{concert.date}}
+<br>
+<button type="button" name="button" [routerLink]="['/concerts', concert._id]">View Details</button>
+</p>
+
+</div>

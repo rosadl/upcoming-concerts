@@ -1,0 +1,12 @@
+<div class="row edit-row">
+  <div class="col-md-6">
+    <br>
+    <label>Artist</label>
+    <input value= {{concert.artist}} type="text" [(ngModel)]="formInfo.artist" /><br />
+    <br>
+    <label>Date</label>
+    <input value= {{concert.date}} type="date" [(ngModel)]="formInfo.date" >
+<br>
+<br>
+      <button (click)="new()"> Create </button>
+</div>

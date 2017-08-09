@@ -1,0 +1,22 @@
+
+  <div class="row edit-row">
+    <div class="col-md-6">
+      <br>
+      <label>Name</label>
+      <input value= {{admin.name}} type="text" [(ngModel)]="formInfo.name" /><br />
+      <br>
+      <label>Location</label>
+      <input value= {{admin.location}} type="text" [(ngModel)]="formInfo.location" /><br />
+      <br>
+      <label>Email</label>
+      <input value= {{admin.email}} type="text" [(ngModel)]="formInfo.email" /><br />
+      <br>
+      <label>description</label>
+      <input value = {{admin.description}} type="text" [(ngModel)]="formInfo.description" /><br />
+      <br>
+      <label>capacity</label>
+      <input value = {{admin.capacity}} type="text" [(ngModel)]="formInfo.capacity" /><br />
+    </div>
+    <br>
+        <button (click)="new()" [routerLink]="['/login']"> Create </button>
+  </div>

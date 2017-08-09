@@ -1,0 +1,20 @@
+
+<div class="row edit-row">
+  <div class="col-md-6">
+    <br>
+    <label>Name</label>
+    <input value= {{client.name}} type="text" [(ngModel)]="formInfo.name" /><br />
+    <br>
+    <label>Last Name</label>
+    <input value= {{client.lastName}} type="text" [(ngModel)]="formInfo.lastName" /><br />
+    <br>
+    <label>City</label>
+    <input value = {{client.city}} type="text" [(ngModel)]="formInfo.city" /><br />
+    <br>
+    <label>Email</label>
+    <input value= {{client.email}} type="text" [(ngModel)]="formInfo.email" />
+    <br>
+  </div>
+  <br>
+      <button (click)="new()" [routerLink]="['/login']"> Create </button>
+</div>
