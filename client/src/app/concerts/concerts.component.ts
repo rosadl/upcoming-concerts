@@ -11,7 +11,7 @@ import { ConcertService } from '../services/concert.service';
 })
 export class ConcertsComponent implements OnInit {
 error:string;
-concerts=[]
+concerts:any;
   constructor(private ConcertService: ConcertService,
     private router: Router,
     private route: ActivatedRoute) {}

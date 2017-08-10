@@ -2,13 +2,13 @@
   <div class="col-md-6">
     <br>
     <label>Artist</label>
-    <input value= {{concert.artist}} type="text" [(ngModel)]="formInfo.artist" /><br />
+    <input type="text" [(ngModel)]="formInfo.artist" /><br />
     <br>
     <label>Date</label>
-    <input value= {{concert.date}} type="date" [(ngModel)]="formInfo.date" >
+    <input type="date" [(ngModel)]="formInfo.date" >
 <br>
 <label>Capacity</label>
-<input value= {{concert.capacity}} type="number" [(ngModel)]="formInfo.capacity" >
+<input type="number" [(ngModel)]="formInfo.capacity" >
 <br>
 <br>
       <button (click)="new()"> Create </button>
