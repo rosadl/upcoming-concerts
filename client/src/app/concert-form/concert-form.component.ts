@@ -14,6 +14,7 @@ export class ConcertFormComponent implements OnInit {
   formInfo  = {
     artist: '',
     date: Date,
+    capacity: Number,
     imgUrl:'',
     summary:'',
     userID:'',

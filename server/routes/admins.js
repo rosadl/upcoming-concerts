@@ -11,7 +11,6 @@ adminRoutes.post('/admins/new', (req, res, next) => {
     location: req.body.location,
     email: req.body.email,
     description: req.body.description,
-    capacity: req.body.capacity,
     imageUrl: req.body.imageUrl,
     userID: req.body.userID
   };

@@ -17,7 +17,6 @@ export class AdminComponent implements OnInit {
     location: '',
     email: '',
     description:'',
-    capacity:'',
     userID:''
   }
 

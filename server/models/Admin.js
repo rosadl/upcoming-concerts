@@ -6,7 +6,6 @@ const adminSchema = new Schema({
   location: String,
   email: String,
   description: String,
-  capacity: Number,
   imgUrl: {type: String, default: "https://placeholdit.imgix.net/~text?txtsize=33&txt=250%C3%97250&w=250&h=250"},
   userID: {
    type: Schema.Types.ObjectId,

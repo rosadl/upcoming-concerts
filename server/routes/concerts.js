@@ -65,6 +65,7 @@ artistPromise.then(data => {
     userID: req.body.userID,
     artist: req.body.artist,
     date: req.body.date,
+    capacity: req.body.capacity,
     imgUrl: [data.image[1]['#text'], data.image[4]['#text']],
     summary: data.bio.summary,
     similarArtist: [data.similar.artist[0].name, data.similar.artist[1].name, data.similar.artist[2].name],

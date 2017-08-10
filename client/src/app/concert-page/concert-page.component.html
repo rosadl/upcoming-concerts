@@ -4,12 +4,19 @@
   <br>
   <img src="{{concertProfile.imgUrl[1]}}" alt="loading">
   <br>
+  <p>Capacity: {{concertProfile.capacity}}</p>
+  <br>
   Summary: {{concertProfile.summary}}
     <br>
   Similar artist: {{concertProfile.similarArtist}}
   <br>
   Tags: {{concertProfile.tags}}
   <br>
+
+  <div *ngIf = "assistants.length == concertProfile.capacity">
+    <p>aforo completo</p>
+  </div>
+
   <button (click)="assistButton()">Assist</button>
   <br>
 <button (click)="deleteConcert(concertProfile._id)" [routerLink]="['/concerts']">Delete</button>
