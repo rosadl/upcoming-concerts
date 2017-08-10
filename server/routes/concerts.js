@@ -31,9 +31,18 @@ concertRoutes.get('/concerts/:id', (req, res, next) => {
   });
 });
 
+concertRoutes.post('/concerts/:id/delete', (req, res, next) => {
+  const id = req.params.id;
+  Concert.findByIdAndRemove(id, (err, concerts) => {
+    if (err){ return next(err); }
 
-
-
+    Assistant.remove({concertId:id}, (err, Assistant) => {
+      if (err){ return next(err); }
+    console.log("borrado");
+      // return res.redirect('/events');
+    });
+  });
+});
 
 concertRoutes.post('/concert/new', (req, res, next) => {
   var lfm = new LastfmAPI({
@@ -71,6 +80,8 @@ artistPromise.then(data => {
   });
 });
 });
+
+
 
 
 

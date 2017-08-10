@@ -36,8 +36,12 @@ getConcert(id){
     .map((res) => res.json());
 }
 getRecomended(content){
-  console.log(content)
   return this.http.get(`${this.BASE_URL}/concerts/artist/${content.name}`, this.options)
+    .map((res) => res.json());
+}
+
+deleteConcert(id){
+  return this.http.post(`${this.BASE_URL}/concerts/${id}/delete`,id, this.options)
     .map((res) => res.json());
 }
 }

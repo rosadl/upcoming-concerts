@@ -86,4 +86,10 @@ export class ConcertPageComponent implements OnInit {
     this.specs = []
     this.recommendations = []
   }
+  deleteConcert(id){
+    this.concert.deleteConcert(id).subscribe(result =>{
+    }
+    )
+
+  }
 }

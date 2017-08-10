@@ -12,7 +12,8 @@
   <br>
   <button (click)="assistButton()">Assist</button>
   <br>
-
+<button (click)="deleteConcert(concertProfile._id)" [routerLink]="['/concerts']">Delete</button>
+<br>
   <div>
     <ul>
     <li *ngFor="let spec of specs"> {{ spec }} </li>
